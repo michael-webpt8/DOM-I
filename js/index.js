@@ -42,6 +42,8 @@ const siteContent = {
   }
 };
 
+// Header -------------------------------------------------- //
+
 const navigationLinks = document.querySelectorAll('nav a');
 
 for (let i = 0; i < navigationLinks.length; i++) {
@@ -50,3 +52,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 let logo = document.getElementById('logo-img');
 logo.setAttribute('src', siteContent['nav']['img-src']);
+
+// CTA section ------------------------------------------------ //
+
+const ctaHeadingText = document.querySelector('.cta-text h1');
+ctaHeadingText.textContent = siteContent['cta']['h1'];
+// filler styles for right now.
+ctaHeadingText.style.width = '175px';
+ctaHeadingText.style.marginLeft = 'auto';
+ctaHeadingText.style.marginRight = 'auto';
+ctaHeadingText.style.textAlign = 'center';
+// will fix later..
