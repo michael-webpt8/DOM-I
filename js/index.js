@@ -59,7 +59,10 @@ const ctaHeadingText = document.querySelector('.cta-text h1');
 ctaHeadingText.textContent = siteContent['cta']['h1'];
 // filler styles for right now.
 ctaHeadingText.style.width = '175px';
-ctaHeadingText.style.marginLeft = 'auto';
-ctaHeadingText.style.marginRight = 'auto';
-ctaHeadingText.style.textAlign = 'center';
 // will fix later..
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent['cta']['button'];
+
+const ctaImage = document.querySelector('#cta-img');
+ctaImage.setAttribute('src', siteContent['cta']['img-src']);
