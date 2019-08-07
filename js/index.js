@@ -42,12 +42,11 @@ const siteContent = {
   }
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById('logo-img');
-logo.setAttribute('src', siteContent['nav']['img-src']);
-
 const navigationLinks = document.querySelectorAll('nav a');
 
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].textContent = siteContent['nav'][`nav-item-${i}`];
 }
+
+let logo = document.getElementById('logo-img');
+logo.setAttribute('src', siteContent['nav']['img-src']);
