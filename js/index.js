@@ -48,8 +48,17 @@ const navigationLinks = document.querySelectorAll('nav a');
 
 for (let i = 0; i < navigationLinks.length; i++) {
 	navigationLinks[i].textContent = siteContent['nav'][`nav-item-${i}`];
-	navigationLinks[i].style.color = 'green';
+	navigationLinks[i].style.color = 'green'; // nav links to be green.
 }
+
+// --------------------------------------------------
+// append to nav system
+const endNavlink = document.createElement('a');
+endNavlink.textContent = 'Plan';
+const navLinksTail = document.querySelector('nav');
+navLinksTail.appendChild(endNavlink);
+
+//--------------------------------------------------------
 
 let logo = document.getElementById('logo-img');
 logo.setAttribute('src', siteContent['nav']['img-src']);
