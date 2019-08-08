@@ -55,8 +55,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // append to nav system
 const endNavlink = document.createElement('a');
 endNavlink.textContent = 'Plan';
+endNavlink.style.color = 'green';
 const navLinksTail = document.querySelector('nav');
 navLinksTail.appendChild(endNavlink);
+
+const prependNavLink = document.createElement('a');
+prependNavLink.textContent = 'Idea';
+prependNavLink.style.color = 'green';
+const navLinkHead = document.querySelector('nav');
+navLinkHead.prepend(prependNavLink);
 
 //--------------------------------------------------------
 
