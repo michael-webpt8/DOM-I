@@ -100,3 +100,8 @@ const contactInfo = document.querySelectorAll('.contact p');
 contactInfo[0].textContent = siteContent['contact']['address'];
 contactInfo[1].textContent = siteContent['contact']['phone'];
 contactInfo[2].textContent = siteContent['contact']['email'];
+
+// footer section --------------------------------------------------------- //
+
+const footerPar = document.querySelector('footer p');
+footerPar.textContent = siteContent['footer']['copyright'];
