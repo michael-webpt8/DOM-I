@@ -73,10 +73,16 @@ logo.setAttribute('src', siteContent['nav']['img-src']);
 // CTA section ------------------------------------------------ //
 
 const ctaHeadingText = document.querySelector('.cta-text h1');
-ctaHeadingText.textContent = siteContent['cta']['h1'];
-// filler styles for right now.
-ctaHeadingText.style.width = '175px';
-// will fix later..
+
+const ctaHeadingArr = siteContent['cta']['h1'].split(' ');
+const brTag1 = document.createElement('br');
+const brTag2 = document.createElement('br');
+
+ctaHeadingText.append(ctaHeadingArr[0]);
+ctaHeadingText.append(brTag1);
+ctaHeadingText.append(ctaHeadingArr[1]);
+ctaHeadingText.append(brTag2);
+ctaHeadingText.append(ctaHeadingArr[2]);
 
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent['cta']['button'];
