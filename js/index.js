@@ -48,6 +48,7 @@ const navigationLinks = document.querySelectorAll('nav a');
 
 for (let i = 0; i < navigationLinks.length; i++) {
 	navigationLinks[i].textContent = siteContent['nav'][`nav-item-${i}`];
+	navigationLinks[i].style.color = 'green';
 }
 
 let logo = document.getElementById('logo-img');
